@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>inShorts Learning web App</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1><img src="inshorts.png"> Learning web App</h1>
+    </header>
+    <main>
+        <form id="form">
+            <label for="category">Please select any one of the following categories</label>
+            <select name="category" id="category">
+                <option value="all">all</option>
+                <option value="national">national</option>
+                <option value="business">business</option>
+                <option value="sports">sports</option>
+                <option value="world">world</option>
+                <option value="politics">politics</option>
+                <option value="technology">technology</option>
+                <option value="startup">startup</option>
+                <option value="entertainment">entertainment</option>
+                <option value="miscellaneous">miscellaneous</option>
+                <option value="hatke">hatke</option>
+                <option value="science">science</option>
+                <option value="automobile">automobile</option>
+            </select>
+            <button>Click</button>
+        </form>
+        <div class="row news">
+        </div>
+    </main>
+</body>
+
+</html>

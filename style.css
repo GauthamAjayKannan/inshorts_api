@@ -1,0 +1,192 @@
+header{
+    text-align: center;
+    padding:1rem;
+    background-color: rgb(246, 129, 129);
+    color:rgb(70, 69, 69);
+}
+
+header img{
+    width: 17rem;
+}
+
+form{
+     background-color: rgb(246, 129, 129);
+     width:50%;
+     margin:2rem auto;
+     padding:4rem 5rem;
+     text-align: center;
+     border-radius: 6px;
+}
+
+form select{
+    width:30%;
+    padding:.2rem 1.5rem;
+    margin:.5rem 1.5rem;
+    border-radius: 6px;
+    border: 2px solid rgb(111, 108, 108);
+    margin-right:0;
+    cursor: pointer;
+
+}
+
+form button{
+    border-radius: 6px;
+    padding:.2rem .9rem;
+    border-color: transparent;
+}
+
+form label{
+    font-size: 1.5rem;
+}
+
+form button:hover{
+    background-color: rgb(111, 108, 108);
+    color:white;
+}
+
+form select:hover{
+    background-color: rgb(246, 129, 129);
+    cursor: pointer;
+}
+
+.news{
+  display: flex;
+  margin:2rem 3rem;
+  flex-wrap: wrap;
+  flex-direction: row;
+  box-sizing: border-box;
+  justify-content: space-between;
+}
+
+.news-blocks{
+    background-color: rgb(246, 129, 129);
+    display: flex;
+    border-radius: 6px;
+    padding:1.5rem;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    margin:5px;
+    max-width: 49%;
+    animation: 2s ease-out 0s 1 FadeIn;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px black;
+    transition: transform .35s ease-in-out;
+}
+
+.news-blocks:hover{
+    transform:translateY(-5px);
+}
+
+.news-blocks img{
+    width:45%;
+    height:60%;
+    object-fit: cover;
+    border-radius: 6px;
+    box-shadow: 2px 2px 5px black;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    margin:1.5rem;
+}
+
+.newscontent{
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.loading{
+    text-align: center;
+}
+
+.buttonsec{
+    text-align: center;
+    margin:2rem;
+}
+
+.buttonsec a{
+    display: inline-block;
+    margin:.2rem;
+    border-radius: 6px;
+    padding:.5rem 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    color:black;
+}
+
+
+.buttonsec .inshorts{
+  background-color: rgb(245, 83, 83);
+  border-color: transparent;
+}
+
+.buttonsec .readmore{
+  background-color: rgb(245, 227, 227);
+  border-color: black;
+}
+
+.buttonsec .readmore:hover{
+    background-color: rgb(31, 31, 31);
+    color:white;
+}
+
+.buttonsec .inshorts:hover{
+  background-color: rgb(254, 8, 8);
+  color:white;
+}
+
+
+@keyframes FadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+}
+
+
+@media  screen and (max-width:1025px) {
+    form{
+        width:80%;
+    }
+
+    .news-blocks{
+        max-width: 100%;
+    }
+
+    .spinner-border{
+        margin-top: 1rem;
+    }
+    
+}
+
+@media  screen and (max-width:500px) {
+    form select{
+        width:100%;
+        margin:.5rem auto 0;
+    }
+
+    form label{
+        font-size: 1.3rem;
+    }
+
+    form button{
+        margin:.5rem 1.5rem;
+    }
+
+    .news-blocks{
+        flex-direction: column;
+    }
+
+    .news-blocks img{
+    width:100%;
+}
+
+.news-blocks .newscontent{
+    font-size: .9rem;
+}
+    
+}
